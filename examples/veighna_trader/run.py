@@ -23,6 +23,7 @@ from vnpy_ctp import CtpGateway
 # from vnpy_tts import TtsGateway
 # from vnpy_ost import OstGateway
 # from vnpy_hft import GtjaGateway
+from vnpy_okx import OkxGateway
 
 # from vnpy_paperaccount import PaperAccountApp
 from vnpy_ctastrategy import CtaStrategyApp
@@ -71,6 +72,7 @@ def main():
     # main_engine.add_gateway(OstGateway)
     # main_engine.add_gateway(NhFuturesGateway)
     # main_engine.add_gateway(NhStockGateway)
+    main_engine.add_gateway(OkxGateway)
 
     # main_engine.add_app(PaperAccountApp)
     main_engine.add_app(CtaStrategyApp)
